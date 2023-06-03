@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Stone
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 2885328043
+    locked: 0
+  - name: Object
+    uniqueID: 1743811887
+    locked: 0
+  - name: Player
+    uniqueID: 3095008239
     locked: 0
