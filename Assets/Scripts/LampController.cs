@@ -39,12 +39,10 @@ public class LampController : MonoBehaviour
         if (LampLight)
         {
             LampLight = false;
-
         }
         else
         {
             LampLight = true;
-
         }
 
     }

@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // 플레이어를 움직이게 하는 코드
         if (canMove)
         {
             theRigid.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), 0) * moveSpeed;

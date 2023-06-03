@@ -7,6 +7,7 @@ public class TitleController : MonoBehaviour
 {
     public string SceneToLoad;
 
+    // 씬을 로드하는 코드
     public void SceneChange()
     {
         SceneManager.LoadScene(SceneToLoad);

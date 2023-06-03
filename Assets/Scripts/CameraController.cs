@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class CameraController : MonoBehaviour
 {
+    // 따라다닐 목표와 카메라의 이동을 제한할 타일 맵의 변수
     public Transform target;
     public Tilemap theMap;
 
@@ -19,9 +20,11 @@ public class CameraController : MonoBehaviour
     {
         target = FindObjectOfType<PlayerController>().transform;
 
+        // 화면의 크기를 구하는 식
         halfHeight = Camera.main.orthographicSize;
         halfWidth = halfHeight * Camera.main.aspect;
 
+        //화면의 크기를 제한하는 식
         bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth, halfHeight, 0f);
         topRightLimit = theMap.localBounds.max + new Vector3(-halfWidth, -halfHeight, 0f);
 

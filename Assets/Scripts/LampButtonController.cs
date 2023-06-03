@@ -73,6 +73,7 @@ public class LampButtonController : MonoBehaviour
                 buttonOn = true;
             }
 
+            // 각 bool 값이 true라면 불을 끄고 켤 수 있도록 한다
             if (LampCont1)
             {
                 LampLight1.LampLightSwitch();
@@ -99,7 +100,7 @@ public class LampButtonController : MonoBehaviour
             }
         }
 
-
+        // 버튼의 스프라이트를 바꾸기 위한 코드
         if (!buttonOn)
         {
             sprite_index = 0;
@@ -111,6 +112,7 @@ public class LampButtonController : MonoBehaviour
             spriteRenderer.sprite = sprites[sprite_index];
         }
 
+        //전등이 모두 켜졌을 때, allBright를 true로 
         if(LampLight1.LampLight==true || LampLight2.LampLight == true|| LampLight3.LampLight == true|| LampLight4.LampLight == true|| LampLight5.LampLight == true|| LampLight6.LampLight == true)
         {
             allBright = true;

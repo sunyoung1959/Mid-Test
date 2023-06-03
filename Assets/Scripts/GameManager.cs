@@ -8,15 +8,16 @@ public class GameManager : MonoBehaviour
 
     public GameObject door;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         door.SetActive(true);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
+        // 전등이 모두 켜지면 문이 사라지도록 하는 코드
         if(LampButtonController.allBright == true)
         {
             door.SetActive(false);
